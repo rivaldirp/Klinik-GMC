@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Klinik_GMC</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cg0fxqp5.c20~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="MySqlConnector" Version="2.1.13" />
+    <PackageReference Include="System.Data.Odbc" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FormDadokTHT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDadokSM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDadokPG.Designer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDadokPG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDadokPU.Designer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDadokPU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormJanji.Designer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormJanji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormLakes.Designer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormLakes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormLogin.Designer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
